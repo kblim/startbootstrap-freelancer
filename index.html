@@ -32,12 +32,21 @@
 </head>
 
 <body id="page-top" class="index">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-55PX6C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-55PX6C');</script>
+<!-- End Google Tag Manager -->
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header page-scroll" onclick="ga('send', 'event', 'Navigation', 'Click', 'Home')>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
@@ -50,16 +59,16 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll" onclick="ga('send', 'event', 'Navigation', 'Click', 'Portfolio')>
                         <a href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll" onclick="ga('send', 'event', 'Navigation', 'Click', 'About')>
                         <a href="#about">About</a>
                     </li>
-                    <li class = "text">
+                    <li class = "text" onclick="ga('send', 'event', 'Navigation', 'Click', 'CV') >
                         <a href="docs/KirstenLimResume.pdf">Resume</a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll" onclick="ga('send', 'event', 'Navigation', 'Click', 'Contact')>
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -262,7 +271,7 @@
                         <br>
                         <div id="success"></div>
                         <div class="row">
-                            <div class="form-group col-xs-12">
+                            <div class="form-group col-xs-12" onclick="ga('send', 'event', 'Contact', 'Click', 'send')>
                                 <button type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
@@ -285,19 +294,19 @@
                     <div class="footer-col col-lg-8 col-lg-offset-2 text-center">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li onclick="ga('send', 'event', 'Social Media', 'Click', 'Facebook')>
                                 <a href="https://www.facebook.com/kirstenl42" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li>
+                            <li onclick="ga('send', 'event', 'Social Media', 'Click', 'Google Plus')>
                                 <a href="https://plus.google.com/108261373432644257214/about/p/pub" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
-                            <li>
+                            <li onclick="ga('send', 'event', 'Social Media', 'Click', 'Instagram')>
                                 <a href="https://www.instagram.com/kirkirlim/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
-                            <li>
+                            <li onclick="ga('send', 'event', 'Social Media', 'Click', 'LinkedIn')>
                                 <a href="https://www.linkedin.com/in/kirstenlim" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                            <li>
+                            <li onclick="ga('send', 'event', 'Social Media', 'Click', 'Flickr')>
                                 <a href="https://www.flickr.com/photos/122054785@N05/" class="btn-social btn-outline"><i class="fa fa-fw fa-flickr"></i></a>
                             </li>
                         </ul>
